@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio - Research Papers, Patents, and Projects by Xiaoya Xie">
+    <title>Portfolio | Xiaoya Xie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">XIAOYAXIE</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">My <span class="highlight">Portfolio</span></h1>
+            <p class="page-subtitle">Research Publications, Patents, and Project Experience</p>
+        </div>
+    </section>
+
+    <!-- Research Papers Section -->
+    <section class="research-papers">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-file-alt"></i> Research Publications
+            </h2>
+            <div class="papers-grid">
+                <div class="paper-card">
+                    <div class="paper-badge">IF: 8.949</div>
+                    <div class="paper-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="paper-title">
+                        One-year outcomes of polymer-free amphilimus-eluting stents versus durable 
+                        polymer zotarolimus-eluting stents in patients with diabetes mellitus
+                    </h3>
+                    <p class="paper-journal">
+                        <i class="fas fa-book"></i> Cardiovascular Diabetology
+                    </p>
+                    <p class="paper-authors">
+                        Wang Hong, <strong>Xie Xiaoya (Co-first author)</strong>, Zu Quannan, et al.
+                    </p>
+                    <p class="paper-year">
+                        <i class="fas fa-calendar"></i> 2022
+                    </p>
+                    <p class="paper-description">
+                        A comprehensive meta-analysis comparing the efficacy of two types of drug-eluting 
+                        stents in diabetic patients undergoing percutaneous coronary intervention.
+                    </p>
+                    <a href="images/paper1.pdf" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-download"></i> View Paper
+                    </a>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-badge">IF: 3.605</div>
+                    <div class="paper-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="paper-title">
+                        Long-Term Ticagrelor Monotherapy for T2DM after PCI: A Meta-analysis
+                    </h3>
+                    <p class="paper-journal">
+                        <i class="fas fa-book"></i> Diabetes Therapy
+                    </p>
+                    <p class="paper-authors">
+                        Wang H, <strong>Xie X (Co-first author)</strong>, Zu Q, Lu M, Chen R, Yang Z, Gao Y, Tang Z.
+                    </p>
+                    <p class="paper-year">
+                        <i class="fas fa-calendar"></i> 2023
+                    </p>
+                    <p class="paper-description">
+                        Systematic evaluation of the efficacy and safety of long-term ticagrelor monotherapy 
+                        in Type 2 Diabetes Mellitus patients following percutaneous coronary intervention.
+                    </p>
+                    <a href="images/paper2.pdf" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-download"></i> View Paper
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patents Section -->
+    <section class="patents">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-lightbulb"></i> Patent Achievements
+            </h2>
+            <div class="patents-grid">
+                <div class="patent-card">
+                    <div class="patent-status">Under Examination</div>
+                    <div class="patent-image" onclick="openImageModal('images/patent1.jpg')">
+                        <img src="images/patent1.jpg" alt="Patent Certificate 1">
+                        <div class="image-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3 class="patent-title">
+                        Dietary and Medical Follow-up Management System for Cardiovascular Diseases
+                    </h3>
+                    <p class="patent-number">
+                        <i class="fas fa-file-contract"></i> Application No.: 202410287632.4
+                    </p>
+                    <p class="patent-role">
+                        <i class="fas fa-user"></i> Role: Co-inventor
+                    </p>
+                    <p class="patent-description">
+                        An innovative system integrating dietary management and medical follow-up for 
+                        cardiovascular disease patients, enabling personalized nutrition intervention 
+                        and continuous health monitoring.
+                    </p>
+                </div>
+
+                <div class="patent-card">
+                    <div class="patent-status">Under Examination</div>
+                    <div class="patent-image" onclick="openImageModal('images/patent2.jpg')">
+                        <img src="images/patent2.jpg" alt="Patent Certificate 2">
+                        <div class="image-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3 class="patent-title">
+                        Drug and Dietary Tracking Management System for T2DM and Chronic Heart Failure Patients
+                    </h3>
+                    <p class="patent-number">
+                        <i class="fas fa-file-contract"></i> Application No.: 202411820374.8
+                    </p>
+                    <p class="patent-role">
+                        <i class="fas fa-user"></i> Role: Co-inventor
+                    </p>
+                    <p class="patent-description">
+                        A comprehensive tracking system for patients with Type 2 Diabetes Mellitus and 
+                        chronic heart failure, integrating medication management and dietary intervention 
+                        for improved patient outcomes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-project-diagram"></i> Project Experience
+            </h2>
+            <div class="projects-list">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Effects of Different Carbohydrate Diets on Glucose Metabolism</h3>
+                            <p class="project-funding">
+                                <i class="fas fa-award"></i> Funded by: National Natural Science Foundation (NRS2012)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h4>My Contributions:</h4>
+                        <ul class="contribution-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Conducted standardized subject recruitment through telephone follow-ups and 
+                                dietary surveys using 3-day 24-hour recall and Food Frequency Questionnaire (FFQ)
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Performed body measurements (composition, circumference, skinfold thickness) and 
+                                biological sample collection (venous blood, urine) under strict protocols
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Ensured data quality through double-entry and quality control, provided personalized 
+                                nutrition counseling, and developed individualized meal plans based on results
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Cardiovascular Disease Patient Tracking and Risk Warning System</h3>
+                            <p class="project-funding">
+                                <i class="fas fa-award"></i> Funded by: Guangxi Key R&D Project (Guke AB22035078)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h4>My Contributions:</h4>
+                        <ul class="contribution-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Participated in preliminary research on cardiovascular patient tracking and 
+                                generated visualization charts for publications
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Explored the impact of different risk warnings on patient intervention strategies
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Supported data cleaning, analysis, and visualization to improve prediction 
+                                accuracy and clinical applicability
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Xiaoya Xie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
+
