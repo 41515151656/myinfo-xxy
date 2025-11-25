@@ -193,26 +193,98 @@
     .timeline::before {
         left: 20px;
     }
-    
+
     .timeline-item {
         padding-left: 70px;
     }
-    
+
     .timeline-marker {
         left: 5px;
         width: 30px;
         height: 30px;
     }
-    
+
+    /* 卡片样式优化 */
+    .experience-card {
+        padding: var(--spacing-md);
+    }
+
     .experience-header {
         flex-direction: column;
         text-align: center;
+        gap: var(--spacing-sm);
+        padding-bottom: var(--spacing-sm);
     }
-    
+
     .experience-icon {
         margin: 0 auto;
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        font-size: 1.5rem;
     }
-    
+
+    /* 文字大小优化 */
+    .experience-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .company {
+        font-size: 1rem;
+    }
+
+    .duration,
+    .location {
+        font-size: 0.85rem;
+    }
+
+    /* 描述区域优化 */
+    .experience-description h4 {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    /* 列表项优化 */
+    .responsibility-list {
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .responsibility-list li {
+        flex-direction: row;
+        gap: var(--spacing-xs);
+        margin-bottom: var(--spacing-xs);
+        font-size: 0.9rem;
+        line-height: 1.6;
+        word-break: break-word;
+    }
+
+    .responsibility-list i {
+        margin-top: 3px;
+        min-width: 16px;
+        font-size: 0.9rem;
+    }
+
+    /* 技能标签优化 */
+    .skills-used {
+        gap: 0.4rem;
+        margin-top: var(--spacing-sm);
+        padding-top: var(--spacing-sm);
+    }
+
+    .skill-tag {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    /* 按钮优化 */
+    .experience-description .btn {
+        margin-top: var(--spacing-sm);
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+        width: 100%;
+        justify-content: center;
+    }
+
     .experience-card:hover {
         transform: translateY(-5px);
     }
